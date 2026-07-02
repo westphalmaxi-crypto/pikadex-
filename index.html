@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Retro Pokédex</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="pokedex">
+
+    <div class="left">
+
+        <div class="lights">
+            <div class="light blue"></div>
+            <div class="light red"></div>
+            <div class="light yellow"></div>
+        </div>
+
+        <div class="screen">
+
+            <img id="image" />
+
+            <h2 id="name">---</h2>
+            <p id="number"></p>
+
+            <div id="types"></div>
+
+            <p id="desc"></p>
+
+        </div>
+
+    </div>
+
+    <div class="right">
+
+        <input id="search" placeholder="Name oder ID">
+
+        <button onclick="searchPokemon()">Suchen</button>
+
+        <div class="buttons">
+            <button onclick="prev()">⬅</button>
+            <button onclick="next()">➡</button>
+        </div>
+
+        <button onclick="toggleFavorite()">⭐ Favorit</button>
+        <button onclick="toggleDarkMode()">🌙 Mode</button>
+
+        <div class="stats">
+            <h3>Stats</h3>
+            <div id="stats"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
